@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <link rel="stylesheet" href="./dist/css/main.css" />
+    </head>
+    <body class="flex justify-center items-center border h-screen px-2">
+        <script type="module" src="./dist/js/index.js" defer></script>
+        <main class="space-y-2 max-w-xs">
+            <form class="border rounded-xl overflow-hidden p-4 space-y-2" id="convert-form">
+                <div class="flex space-x-2">
+                    <select
+                        placeholder="to"
+                        class="p-2 rounded-xl relative w-full border hover:bg-neutral-100 focus:ring-4 focus:outline-none focus:z-10"
+                        id="from-select"
+                    >
+                        <option>from</option>
+                    </select>
+                    <select
+                        placeholder="to"
+                        class="p-2 rounded-xl relative w-full border hover:bg-neutral-100 focus:ring-4 focus:outline-none focus:z-10"
+                        id="to-select"
+                    >
+                        <option>to</option>
+                    </select>
+                </div>
+                <div>
+                    <input
+                        type="number"
+                        placeholder="amount"
+                        class="p-2 placeholder:text-center border rounded-xl w-full hover:bg-neutral-100 focus:ring-4 focus:outline-none focus:z-10"
+                        id="amount-input"
+                    />
+                </div>
+                <button class="w-full p-2 rounded-xl text-xl font-medium text-white bg-blue-500">convert</button>
+            </form>
+            <div id="result-loading" class="hidden justify-center h-10 items-end overflow-hidden space-x-1">
+                <div class="w-2 h-2 rounded-full animate-pulse duration-100 bg-green-500"></div>
+                <div class="w-2 h-2 rounded-full animate-pulse duration-150 bg-green-500"></div>
+                <div class="w-2 h-2 rounded-full animate-pulse duration-200 bg-green-500"></div>
+            </div>
+            <div id="result-container" class="hidden p-4 rounded-xl bg-green-50 text-xl border border-green-500">
+                <span id="from-result" class="text-neutral-800"></span>
+                =
+                <span id="to-result" class="font-semibold"></span>
+            </div>
+            <div id="form-error-container" class="p-4 hidden rounded-xl border border-red-300 bg-red-50 text-red-900">
+                <div class="font-semibold">Error</div>
+                <div class="flex justify-center">
+                    <ul id="form-error-list" class="list-disc p-2">
+                        
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

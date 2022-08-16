@@ -1,0 +1,29 @@
+{
+    "devDependencies": {
+        "autoprefixer": "^10.4.8",
+        "lite-server": "^2.6.1",
+        "postcss": "^8.4.16",
+        "tailwindcss": "^3.1.8"
+    },
+    "name": "currency-conversion",
+    "version": "1.0.0",
+    "dependencies": {
+       
+    },
+    "scripts": {
+        "start": "lite-server",
+        "tailwind": "tailwind -i ./src/tailwind.css -o ./dist/css/main.css --watch",
+        "typescript": "tsc -w"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/arad-5/currency-conversion.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/arad-5/currency-conversion/issues"
+    },
+    "homepage": "https://github.com/arad-5/currency-conversion#readme",
+    "description": ""
+}
